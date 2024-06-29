@@ -1,0 +1,556 @@
+body{
+    margin: 0px 0px 100px 0px;
+}
+header{
+    padding: 80px;
+    text-align: center;
+    background-image: url("./img/header_pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+header h2{
+    color: #010302;
+    text-align: center;
+    font-family: Impact;
+    font-size: 66px;
+    font-weight: 200;
+}
+header h3{
+    text-align: center;
+    color: #F9F4FE;
+    text-shadow: 2px 2px #19181A;
+    font-family: 'LucidaSans';
+    letter-spacing: .5em;
+}
+.selector{
+    margin-right: auto;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+}
+.headerwhite{
+      color: #00872F;
+  }
+  
+  /* start of navigation css*/
+.navbar {
+    z-index: 1;
+    font-size: 20px;
+    font-family: 'source sans-pro';
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    position: sticky;
+    top: 0;
+    background-color: #CCC;
+    text-align: center;
+    background-image: -webkit-linear-gradient(90deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    background-image: -moz-linear-gradient(90deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    background-image: linear-gradient(0deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    -webkit-box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Style the navigation bar first look links */
+.navbar a {
+    float:left;
+    display: block;
+    color: #E4FEFA;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    box-shadow: 0px 1px 10px #999;
+}
+
+.navbar input[type=text] {
+    border: 1px solid #ccc;  
+}
+
+/* Change color on hover over links*/
+.navbar a:hover {
+    background-image: -moz-linear-gradient(270deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00)100%);
+    background-image: -webkit-linear-gradient(270deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    -webkit-box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    color: black;
+}
+
+/*Edit the navigation block to be smaller */
+.navbar ul {
+    color: white;
+	list-style: none;
+	margin: 0px auto 0px 0px;
+	padding: 0px 0px 0px 15px;
+	display: inline-block;
+}
+
+/* make the navigation tabs horizontal*/
+.navbar ul li {
+    float: left;
+	margin: 0;
+	display: inline-block;
+}
+
+
+.nav-item a:hover {
+    background-color: gray;
+}
+.nav-item li ul {
+    display: none;
+}
+
+/* Active current link */
+.navbar .active {
+    background-color: #666;
+    color: white;
+}
+
+.navbar input[type=text] {
+  float: left;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 80%;
+}
+
+.navbar #search button {
+ 
+  float: left;
+  width: 20%;
+  padding: 10px;
+  margin-top: 8px;
+  background-image: -webkit-linear-gradient(90deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+  background-image: -moz-linear-gradient(90deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+  background-image: linear-gradient(0deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+  -webkit-box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+.navbar #search button:hover
+{
+  background-image: -moz-linear-gradient(270deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00)100%);
+  background-image: -webkit-linear-gradient(270deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+  background-image: -o-linear-gradient(270deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    -webkit-box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    color: black;
+
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	box-sizing: border-box;
+	clear: both;
+	margin: 0px;
+	background-color: #CCC;
+	font-size: 90%;
+	border-top: solid 3px #666;
+	background-image: -webkit-linear-gradient(90deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    background-image: -moz-linear-gradient(90deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    background-image: linear-gradient(0deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    
+}
+#footer p {
+	margin: 0px 0px 5px 0px;
+	color: #19181A;
+}
+
+.relative {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
+}
+#inventorytitle{
+    position: absolute;
+    padding: 15px 0px 0px 20px;
+    font-size: 25px;
+}
+
+.page button{
+    margin: 0px 10px;
+    padding: 10px 15px;
+    background-color: #e99f4c;
+}
+.page button:disabled{
+    padding: 10px 15px;
+    background-color: grey;
+}
+
+#inventory{
+    max-width: 100%;
+    display: block;
+}
+#inventory .container{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.testbox
+{
+    width: 100%;
+    max-width: 350px;
+    height: 175px;
+    border: 3px solid black;
+    margin: 10px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn{
+    padding: 16px;
+    display: block;
+}
+.dropcontent{
+    width: 100%;
+    color: black;
+    margin-top: 58px;
+    position: absolute;
+    list-style-type: none;
+    background-image: -webkit-linear-gradient(90deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    background-image: -moz-linear-gradient(90deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    background-image: linear-gradient(0deg,rgba(9,127,163,1.00) 0%,rgba(14,98,152,1.00) 100%);
+    -webkit-box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+.dropcontent a{
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+    color: black;
+    overflow: visible;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    float: left;
+    z-index: 1;
+}
+
+
+.welcomeMessage {
+    padding: 80px;
+    text-align: center;
+    background-color: #faa346;
+    border: 7px;
+    border-style: groove;
+    font-family: Helvetica, sans-serif;
+    font-size: 27px;
+}
+
+
+.tipsMainHeading {
+    font-family: Impact;
+    color: #2a7e4b;
+    font-size: 60px;
+    width: 100%;
+    text-decoration: underline;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.tipsHeading {
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 30px;
+}
+.tipsContents {
+    font-weight: bold;
+}
+.waterTips {
+    background-color: #ccfffe;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.tipsTitle {
+    width: 35%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600px;
+    font-family: Courier, monospace;
+    font-size: 60px;
+}
+.innerTipsContents {
+    width: 65%;
+    font-family: Optima, sans-serif;
+    font-size: 17px;
+}
+.foodTips {
+    background-color: #f7db86;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.shelterTips {
+    background-color: #ffa8c8;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.clothTips {
+    background-color: #bdff91;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.firstAidTips {
+    background-color: #fdff7a;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.miscTips {
+    background-color: #b0d2ff;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#formpage{
+    padding-left: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: left;
+    font-family: verdana;
+    font-weight: bold;
+    width: 100%;
+     background-image: url("./img/formPic.jpg");
+     
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+#formpage h1{
+   font-size: 40px;
+}
+#formpage .info{
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+aside {
+  width: 20%;
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 135px;
+  padding-right: 20px;
+  margin-top: 35px;
+  margin-left: 15px;
+  margin-right: 30px;
+  font-style: italic;
+  background-color: lightgray;
+  display: block;
+  float: right;
+}
+aside2 {
+  width: 65%;
+  padding: 40px;
+  margin: 35px;
+  margin-left: 80px;
+  margin-bottom: 10px;
+  margin-top: 35px;
+  float: left;
+  display: block;
+  justify-content: center;
+  font-style: italic;
+  background-color: #6db784;
+}
+#infectionpage {
+    
+}
+
+#itemModal{ 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  rgb(0,0,0,0.8);
+}
+.modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: default;
+    
+}
+
+.modal-content{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+}
+
+
+input {
+    width: 80%;
+    display: block;
+    margin: 15px auto;
+}
+
+.modaltitle{
+    font-family: impact;
+    font-size: 25px;
+}
+.aticle
+{
+    /*background: #ffffff;*/
+}
+
+#infectiongif {
+    display: block;
+    justify-content: center;
+    margin-left: 127px;
+}
+.survivalform h1,h4{
+    text-align: center;
+    
+}
+.food{
+    background-image: url("./img/food.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.clothes{
+    background-image: url("./img/clothes.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.weapon{
+    background-image: url(./img/weapons.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.medicine{
+    background-image: url(./img/medicine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tools{
+    background-image: url(./img/tools.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vehicles{
+    background-image: url(./img/vehicles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.misc{
+    bcakground-image: url(./img/misc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.survivor html {
+  box-sizing: border-box;
+}
+
+.survivor *, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.survivor .column {
+  float: left;
+  width: 20%;
+  margin-bottom: 20px;
+  margin-left:20px;
+  padding: 0 8px;
+}
+.survivor
+{
+    margin-top: 3px;
+    margin-left:3px;
+}
+
+@media screen and (max-width: 550px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.survivor .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.survivor .container {
+  padding: 0 16px;
+}
+
+.survivor .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.survivor .title {
+  color: grey;
+}
+
+.survivor .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.survivor .button:hover {
+  background-color: #455859;
+}
+.survivor .button a{
+    border: none;
+    text-decoration: none;
+    color: inherit;
+}
+.survivor h1 {
+    text-align: center;
+}
